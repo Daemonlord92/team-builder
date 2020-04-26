@@ -1,0 +1,22 @@
+{
+	"team": [
+		{
+			"id": 1,
+			"name": "Matthew Martin",
+			"role": "Frontend Developer",
+			"email": "matthew-martin@lambdastudents.com"
+		},
+		{
+			"id": 2,
+			"name": "Rick Sanchez",
+			"role": "Sciencist",
+			"email": "rick-sanchez@lambdastudents.com"
+		},
+		{
+			"id": 3,
+			"name": "Morty Smith",
+			"role": "Assistant",
+			"email": "morty-smith@lambdastudents.com"
+		},
+	]
+}

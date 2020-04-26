@@ -1,0 +1,22 @@
+{
+  "name": "team-builder",
+  "version": "1.0.0",
+  "description": "This project allows you to practice the concepts and techniques learned in this module and apply them in a concrete project. This module explored Form management in React. You learned about controled inputs, semantic HTML, some ES6 tools like the spread operator and computer properties, and synthetic events. In your project you will demonstrate proficiency of these subjects and principles by creating an application using each of these.",
+  "main": "team.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daemonlord92/team-builder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daemonlord92/team-builder/issues"
+  },
+  "homepage": "https://github.com/Daemonlord92/team-builder#readme",
+  "dependencies": {
+    "faker": "^4.1.0"
+  }
+}
