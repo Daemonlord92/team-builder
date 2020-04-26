@@ -7,7 +7,7 @@ function generateTeam () {
     var email = faker.internet.email()
     team.push({
       "id": id,
-      "first_name": firstName,
+      "name": firstName,
       "role": role,
       "email": email
     })
