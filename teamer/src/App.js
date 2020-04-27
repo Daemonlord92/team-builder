@@ -4,6 +4,8 @@ import axios from 'axios';
 
 import './App.css';
 
+import TeamList from './components/Team/TeamList.js'
+
 function App() {
   const [teamList, setTeamList] = useState([])
 
@@ -22,18 +24,9 @@ function App() {
       getTeam()
     }, [])
   return (
-
     <Container>
       <Row>
-        {teamList.map(member => (
-          <Col>
-            <div className="card">
-              <h2>{member.name}</h2>
-              <h4>{member.role}</h4>
-              <p>{member.email}</p>
-            </div>          
-          </Col>
-          ))}
+        <TeamList members={teamList} />
       </Row>
     </Container>
   );
