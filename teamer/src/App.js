@@ -1,13 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Col, Row } from 'reactstrap';
+import { Route } from 'react-router-dom'
 import axios from 'axios';
 
 import './App.css';
 
 import TeamList from './components/Team/TeamList.js'
+import TeamForm from './components/Team/TeamForm.js'
 
 function App() {
   const [teamList, setTeamList] = useState([])
+
+  const addNewTeamMember = member => {
+    const newMember = {
+      name: teamList.name,
+      role: teamList.role,
+      email: teamList.email
+    }
+    setTeamList([...teamList, newMember])
+  }
 
   useEffect(() => {
       const getTeam = () => {
@@ -23,11 +34,22 @@ function App() {
       }
       getTeam()
     }, [])
+
   return (
     <Container>
-      <Row>
-        <TeamList members={teamList} />
-      </Row>
+      <div style={{margin: "30px"}}>
+        <Row>
+          <TeamForm addNewTeamMember={addNewTeamMember} />
+        </Row>
+
+        <Row>
+           
+          <Route path="/">
+            <TeamList members={teamList} />
+          </Route>
+        
+        </Row>
+      </div>
     </Container>
   );
 }

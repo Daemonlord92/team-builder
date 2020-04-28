@@ -6,7 +6,7 @@ const TeamList = props => {
 		<>
 		{props.members.map(member => (
 	    <Col>
-	      <div className="card">
+	      <div className="card" style={{margin: "10px"}}>
 	        <h2>{member.name}</h2>
 	        <h4>{member.role}</h4>
 	        <p>{member.email}</p>
