@@ -10,7 +10,8 @@ const TeamForm = ({ addNewTeamMember }) => {
 
 	const submitForm = event => {
 		event.preventDefault()
-		addNewTeamMember(member)
+		const newMember = {...member, id: Date.now()}
+		addNewTeamMember(newMember)
 		setMember({ name: "", role: "", email: ""})
 	}
 	return(

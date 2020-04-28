@@ -12,12 +12,7 @@ function App() {
   const [teamList, setTeamList] = useState([])
 
   const addNewTeamMember = member => {
-    const newMember = {
-      name: teamList.name,
-      role: teamList.role,
-      email: teamList.email
-    }
-    setTeamList([...teamList, newMember])
+    setTeamList([...teamList, member])
   }
 
   useEffect(() => {
